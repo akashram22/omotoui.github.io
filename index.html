@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <!-- chartjs -->
+        <link rel="stylesheet" type="text/css" href="">
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Omoto</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-toggler-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+            <img src="omoto_logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
+            <span class="nav-title">Omoto</span></a>
+            <a class="" href="#"></a>
+            <a class="" href="#"></a>
+            <a class="" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row spacing-top">
+                <div class="col-md-4">
+                    <div class="rhombusone" >
+                        <p class="center">48</p>
+                    </div>
+                    <h3 class="rhombus-name">Issues Open</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="rhombustwo" >
+                        <p class="center">25</p>
+                    </div>
+                    <h3 class="rhombus-name">Issues WIP</h3>
+                </div>
+                <div class="col-md-4">
+                    <div class="rhombusthree" >
+                        <p class="center">16</p>
+                    </div>
+                    <h3 class="rhombus-name">Issues Resolved</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 center-chart">
+                    <h3 class="chart-name">Open Issues By Department</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 center-chart">
+                    <canvas id="popChart" width="90" height="50">
+                </div>
+            </div>
+        </div>
+        <div class="container pagination">
+          <div class="row pagination-center">
+            <div class="col-md-12">
+              <hr>
+              <ul >
+                  <li>
+                      <a data-toggle="tooltip" data-placement="top" title="I'm in active state!"  href="#">
+                          <div class="hexagon"></div>
+                      </a>
+                  </li>
+                  
+
+                  <li>
+                      <a data-toggle="tooltip" data-placement="top" title="I'm not in active state, but I'm hovered!" href="#">
+                          <div class="hexagon"></div>
+                      </a>
+                  </li>
+                  <li>
+                      <a data-toggle="tooltip" data-placement="top" title="I'm not in active state, but I'm hovered!" class="active" href="#">
+                          <div class="hexagon"></div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+        <script type="text/javascript">
+            var popCanvas = document.getElementById("popChart");
+            var barChart = new Chart(popCanvas, {
+              type: 'bar',
+               options: {
+                      legend: {
+                          display: false,
+                          labels: {
+                              fontColor: 'rgb(255, 99, 132)'
+                          }
+                      },
+            
+                      scales: {
+                            xAxes: [{
+                              gridLines: {
+                                drawOnChartArea: false
+                              }
+                            }]
+                          }
+              },
+              
+              data: {
+                labels: ["Medical Treatment", "Nursing & Care", "Food & Beverages", "Issues Resolved"],
+                datasets: [{
+                  data: [205, 250, 300, 250,],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(255, 99, 132, 0.6)',
+                    
+                  ]
+                }]
+              }
+            });
+            
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+body
+{
+    background-color: #ecede8;
+}
+
+.bg-light {
+    background-color: #ecede8 !important;
+}
+
+.center-chart{
+    margin: 0 auto;
+}
+
+.rhombusone{
+    width: 100px;
+    height: 100px;
+    background-color: #fc808e;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
+}
+
+.rhombusone p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
+
+.rhombustwo{
+    width: 100px;
+    height: 100px;
+    background-color: #779ec9;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
+}
+
+.rhombustwo p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
+
+.rhombusthree{
+    width: 100px;
+    height: 100px;
+    background-color: #75bab9;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
+}
+
+.rhombusthree p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
+.center {
+     /*centering*/
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 68px;
+        color: white;
+        font-weight: 300;
+}
+
+.spacing-top
+{
+    margin-top: 70px;
+}
+
+.rhombus-name
+{
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 300;
+    color: #585858;
+}
+
+.chart-name
+{
+    text-align: center;
+    padding: 40px 0px;
+    font-weight: 300;
+    color: #585858;
+}
+
+.nav-title
+{
+    font-weight: 300;
+    color: #585858;
+    font-size: 28px;
+
+}
+
+.navbar-light .navbar-toggler
+
+{
+    border-color: transparent;
+    font-size: 
+}
+
+.navbar-toggler-icon
+{
+    font-size: 32px;
+}
+
+
+.hexagon {
+    width: 16px;
+    height: 9px;
+    position: relative;
+}
+a > .hexagon {
+    background: black;    
+}
+.active .hexagon {
+    background: red;    
+}
+
+/* hover states */
+a > .hexagon:hover {
+    background: red;    
+}
+
+/* pseudo classes */
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+/* pseudo classes color variations */
+.active .hexagon:before {
+    border-bottom: 4px solid red;
+}
+.active .hexagon:after {
+    border-top: 4px solid red;
+}
+a > .hexagon:before {
+    border-bottom: 4px solid black;
+}
+a > .hexagon:after {
+    border-top: 4px solid black;
+}
+
+/* pseudo classes hover states */
+a > .hexagon:hover:before {
+    border-bottom-color: red;
+}
+a > .hexagon:hover:after {
+    border-top-color: red;
+}
+
+ul {    list-style: none; margin: 0; padding: 0;}
+ul li {    float: left; margin: 0 5px;}
+
+.pagination
+
+{
+    padding: 50px 0px;
+}
+
+.pagination-center
+{
+    margin: 0 auto;
+}
+
+.active .hexagon {
+    background: #f8655e;
+}
+
+.hexagon:after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.active .hexagon:before {
+    border-bottom: 4px solid #f8655e;
+}
+
+.active .hexagon:before {
+    border-bottom: 4px solid #f8655e;
+}
+
+.active .hexagon:after {
+    border-top: 4px solid #f8655e;
+}
