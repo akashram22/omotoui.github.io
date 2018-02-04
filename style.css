@@ -119,12 +119,12 @@ a > .hexagon {
     background: black;    
 }
 .active .hexagon {
-    background: red;    
+    background: #f79aac;    
 }
 
 /* hover states */
 a > .hexagon:hover {
-    background: red;    
+    background: #f79aac;    
 }
 
 /* pseudo classes */
@@ -151,10 +151,10 @@ a > .hexagon:hover {
 
 /* pseudo classes color variations */
 .active .hexagon:before {
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid #f79aac;
 }
 .active .hexagon:after {
-    border-top: 4px solid red;
+    border-top: 4px solid #f79aac;
 }
 a > .hexagon:before {
     border-bottom: 4px solid black;
@@ -165,48 +165,88 @@ a > .hexagon:after {
 
 /* pseudo classes hover states */
 a > .hexagon:hover:before {
-    border-bottom-color: red;
+    border-bottom-color: #f79aac;
 }
 a > .hexagon:hover:after {
-    border-top-color: red;
+    border-top-color: #f79aac;
 }
 
 ul {    list-style: none; margin: 0; padding: 0;}
 ul li {    float: left; margin: 0 5px;}
 
-.pagination
+/* element */
+.hexagon {
+    width: 16px;
+    height: 9px;
+    position: relative;
+}
+a > .hexagon {
+    background: black;    
+}
+.active .hexagon {
+    background: #f79aac;    
+}
 
-{
-    padding: 50px 0px;
+/* hover states */
+a > .hexagon:hover {
+    background: #f79aac;    
+}
+
+/* pseudo classes */
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+/* pseudo classes color variations */
+.active .hexagon:before {
+    border-bottom: 4px solid #f79aac;
+}
+.active .hexagon:after {
+    border-top: 4px solid #f79aac;
+}
+a > .hexagon:before {
+    border-bottom: 4px solid black;
+}
+a > .hexagon:after {
+    border-top: 4px solid black;
+}
+
+/* pseudo classes hover states */
+a > .hexagon:hover:before {
+    border-bottom-color: #f79aac;
+}
+a > .hexagon:hover:after {
+    border-top-color: #f79aac;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #F27;
+    left: 16px;
+    position: relative;
+    top: -21px;
 }
 
 .pagination-center
 {
     margin: 0 auto;
-}
+    padding: 30px;
 
-.active .hexagon {
-    background: #f8655e;
-}
-
-.hexagon:after {
-    content: '';
-    width: 100%;
-    border-bottom: solid 1px #fff;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: 1;
-}
-
-.active .hexagon:before {
-    border-bottom: 4px solid #f8655e;
-}
-
-.active .hexagon:before {
-    border-bottom: 4px solid #f8655e;
-}
-
-.active .hexagon:after {
-    border-top: 4px solid #f8655e;
 }
