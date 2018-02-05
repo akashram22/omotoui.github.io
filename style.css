@@ -1,5 +1,4 @@
-body
-{
+body {
     background-color: #ecede8;
 }
 
@@ -7,11 +6,11 @@ body
     background-color: #ecede8 !important;
 }
 
-.center-chart{
+.center-chart {
     margin: 0 auto;
 }
 
-.rhombusone{
+.rhombusone {
     width: 100px;
     height: 100px;
     background-color: #fc808e;
@@ -26,7 +25,7 @@ body
     line-height: 100px;
 }
 
-.rhombustwo{
+.rhombustwo {
     width: 100px;
     height: 100px;
     background-color: #779ec9;
@@ -41,7 +40,7 @@ body
     line-height: 100px;
 }
 
-.rhombusthree{
+.rhombusthree {
     width: 100px;
     height: 100px;
     background-color: #75bab9;
@@ -55,79 +54,77 @@ body
     text-align: center;
     line-height: 100px;
 }
+
 .center {
-     /*centering*/
-    position:absolute;
+    /*centering*/
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     font-size: 68px;
-        color: white;
-        font-weight: 300;
+    color: white;
+    font-weight: 300;
 }
 
-.spacing-top
-{
+.spacing-top {
     margin-top: 70px;
 }
 
-.rhombus-name
-{
+.rhombus-name {
     text-align: center;
     padding: 20px 0px;
     font-weight: 300;
     color: #585858;
 }
 
-.chart-name
-{
+.chart-name {
     text-align: center;
     padding: 40px 0px;
     font-weight: 300;
     color: #585858;
 }
 
-.nav-title
-{
+.nav-title {
     font-weight: 300;
     color: #585858;
     font-size: 28px;
-
 }
 
-.navbar-light .navbar-toggler
-
-{
+.navbar-light .navbar-toggler {
     border-color: transparent;
-    font-size: 
+    font-size:
 }
 
-.navbar-toggler-icon
-{
+.navbar-toggler-icon {
     font-size: 32px;
 }
 
-
 .hexagon {
     width: 16px;
     height: 9px;
     position: relative;
 }
-a > .hexagon {
-    background: black;    
+
+a>.hexagon {
+    background: black;
 }
+
 .active .hexagon {
-    background: #f79aac;    
+    background: #f79aac;
 }
+
 
 /* hover states */
-a > .hexagon:hover {
-    background: #f79aac;    
+
+a>.hexagon:hover {
+    background: #f79aac;
 }
 
+
 /* pseudo classes */
+
 .hexagon:before {
     content: "";
     position: absolute;
@@ -138,6 +135,7 @@ a > .hexagon:hover {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
 }
+
 .hexagon:after {
     content: "";
     position: absolute;
@@ -149,50 +147,74 @@ a > .hexagon:hover {
     border-right: 8px solid transparent;
 }
 
+
 /* pseudo classes color variations */
+
 .active .hexagon:before {
     border-bottom: 4px solid #f79aac;
 }
+
 .active .hexagon:after {
     border-top: 4px solid #f79aac;
 }
-a > .hexagon:before {
+
+a>.hexagon:before {
     border-bottom: 4px solid black;
 }
-a > .hexagon:after {
+
+a>.hexagon:after {
     border-top: 4px solid black;
 }
 
+
 /* pseudo classes hover states */
-a > .hexagon:hover:before {
+
+a>.hexagon:hover:before {
     border-bottom-color: #f79aac;
 }
-a > .hexagon:hover:after {
+
+a>.hexagon:hover:after {
     border-top-color: #f79aac;
 }
 
-ul {    list-style: none; margin: 0; padding: 0;}
-ul li {    float: left; margin: 0 5px;}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+    margin: 0 5px;
+}
+
 
 /* element */
+
 .hexagon {
     width: 16px;
     height: 9px;
     position: relative;
 }
-a > .hexagon {
-    background: black;    
+
+a>.hexagon {
+    background: black;
 }
+
 .active .hexagon {
-    background: #f79aac;    
+    background: #f79aac;
 }
+
 
 /* hover states */
-a > .hexagon:hover {
-    background: #f79aac;    
+
+a>.hexagon:hover {
+    background: #f79aac;
 }
 
+
 /* pseudo classes */
+
 .hexagon:before {
     content: "";
     position: absolute;
@@ -203,6 +225,7 @@ a > .hexagon:hover {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
 }
+
 .hexagon:after {
     content: "";
     position: absolute;
@@ -214,25 +237,30 @@ a > .hexagon:hover {
     border-right: 8px solid transparent;
 }
 
+
 /* pseudo classes color variations */
+
 .active .hexagon:before {
     border-bottom: 4px solid #f79aac;
 }
+
 .active .hexagon:after {
     border-top: 4px solid #f79aac;
 }
-a > .hexagon:before {
+
+a>.hexagon:before {
     border-bottom: 4px solid black;
 }
-a > .hexagon:after {
+
+a>.hexagon:after {
     border-top: 4px solid black;
 }
 
-/* pseudo classes hover states */
-a > .hexagon:hover:before {
+a>.hexagon:hover:before {
     border-bottom-color: #f79aac;
 }
-a > .hexagon:hover:after {
+
+a>.hexagon:hover:after {
     border-top-color: #f79aac;
 }
 
@@ -244,9 +272,7 @@ hr {
     top: -21px;
 }
 
-.pagination-center
-{
+.pagination-center {
     margin: 0 auto;
     padding: 30px;
-
 }

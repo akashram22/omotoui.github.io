@@ -17,7 +17,7 @@
     <body>
         <nav class="navbar navbar-toggler-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-            <img src="omoto_logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
+            <img src="images/omoto_logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
             <span class="nav-title">Omoto</span></a>
             <a class="" href="#"></a>
             <a class="" href="#"></a>
@@ -68,33 +68,35 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 center-chart">
+                <div class="col-md-7  center-chart">
                     <canvas id="popChart" width="90" height="50">
                 </div>
             </div>
         </div>
         <div class="container pagination">
-          <div class="row pagination-center">
-            <div class="col-md-12">
-              <ul>
-                  <li>
-                      <a data-toggle="tooltip" data-placement="top"   href="#">
-                          <div class="hexagon"></div><hr>
-                      </a>
-                  </li>
-                  <li>
-                      <a data-toggle="tooltip" data-placement="top"  href="#">
-                          <div class="hexagon"></div><hr>
-                      </a>
-                  </li>
-                  <li>
-                      <a data-toggle="tooltip" data-placement="top"  class="active" href="#">
-                          <div class="hexagon"></div>
-                      </a>
-                  </li>
-              </ul>
+            <div class="row pagination-center">
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <a data-toggle="tooltip" data-placement="top"   href="#">
+                                <div class="hexagon"></div>
+                                <hr>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tooltip" data-placement="top"  href="#">
+                                <div class="hexagon"></div>
+                                <hr>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tooltip" data-placement="top"  class="active" href="#">
+                                <div class="hexagon"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -111,6 +113,9 @@
                               fontColor: 'rgb(255, 99, 132)'
                           }
                       },
+                      ticks: {
+                          autoSkip: false
+                      },
             
                       scales: {
                             xAxes: [{
@@ -122,7 +127,7 @@
               },
               
               data: {
-                labels: ["Medical Treatment", "Nursing & Care", "Food & Beverages", "Issues Resolved"],
+                labels: ["Medical", "Nursing & Care", "Food & Beverages", "Issues Resolved"],
                 datasets: [{
                   data: [205, 250, 300, 250,],
                   backgroundColor: [
@@ -135,6 +140,8 @@
                 }]
               }
             });
+            Chart.defaults.global.responsive = true;
+            Chart.defaults.global.maintainAspectRatio = false;
             
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
