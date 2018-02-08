@@ -15,29 +15,46 @@
         <title>Omoto</title>
     </head>
     <body>
-        <nav class="navbar navbar-toggler-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-            <img src="omoto_logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
+            <img src="omoto_logo.png" width="58" height="58" class="d-inline-block align-top" alt="">
             <span class="nav-title">Omoto</span></a>
             <a class="" href="#"></a>
             <a class="" href="#"></a>
             <a class="" href="#"></a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
+                <form class="form-inline">
+                   <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item ">
+                                                        <a href="#"><img src="house.png"></a>
+                                      </li>
+                                      <li class="nav-item">
+                                                          <a href="#"><img src="help.png"></a>
+
+                                      </li>
+                                      <li class="nav-item">
+                                          <a href="#"><img src="notifications.png"></a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a href="#"><img src="menu.png"></a>
+                                      </li>
+                                  </ul>
+                  </form>
             </div>
+           
         </nav>
         <div class="container">
             <div class="row spacing-top">
@@ -64,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 center-chart">
-                    <h3 class="chart-name">Open Issues By Department</h3>
+                    <h3 class="chart-name">Open Issues By Departments</h3>
                 </div>
             </div>
             <div class="row">
@@ -78,21 +95,15 @@
                 <div class="col-md-12">
                     <ul>
                         <li>
-                            <a data-toggle="tooltip" data-placement="top"   href="#">
-                                <div class="hexagon"></div>
-                                <hr>
-                            </a>
+                            <div class="hexagon"></div>
+                            <hr>
                         </li>
                         <li>
-                            <a data-toggle="tooltip" data-placement="top"  href="#">
-                                <div class="hexagon"></div>
-                                <hr>
-                            </a>
+                            <div class="hexagon"></div>
+                            <hr>
                         </li>
                         <li>
-                            <a data-toggle="tooltip" data-placement="top"  class="active" href="#">
-                                <div class="hexagon"></div>
-                            </a>
+                            <div class="hexagonactive"></div>
                         </li>
                     </ul>
                 </div>
@@ -118,10 +129,22 @@
                       },
             
                       scales: {
+            
+                        yAxes: [
+                              {
+                                ticks: {beginAtZero:true,max:25},
+                                gridLines: {
+                                  display: true
+                                }
+            
+                              }
+                            ],
                             xAxes: [{
                               gridLines: {
-                                drawOnChartArea: false
-                              }
+                                display: false
+                              },
+                              barPercentage: 0.5
+
                             }]
                           }
               },
@@ -129,7 +152,7 @@
               data: {
                 labels: ["Medical", "Nursing & Care", "Food & Beverages", "Issues Resolved"],
                 datasets: [{
-                  data: [205, 250, 300, 250,],
+                  data: [16, 16, 20, 16, 25,],
                   backgroundColor: [
                     'rgba(255, 99, 132, 0.6)',
                     'rgba(255, 99, 132, 0.6)',

@@ -76,14 +76,15 @@ body {
     text-align: center;
     padding: 20px 0px;
     font-weight: 300;
-    color: #585858;
+    color: #9c9c9c;
+    font-size: 23px;
 }
 
 .chart-name {
     text-align: center;
     padding: 40px 0px;
     font-weight: 300;
-    color: #585858;
+    color: #4a4a4a;
 }
 
 .nav-title {
@@ -101,81 +102,110 @@ body {
     font-size: 32px;
 }
 
-.hexagon {
-    width: 16px;
-    height: 9px;
-    position: relative;
+body {
+    background-color: #ecede8;
 }
 
-a>.hexagon {
-    background: black;
+.bg-light {
+    background-color: #ecede8 !important;
 }
 
-.active .hexagon {
-    background: #f79aac;
+.center-chart {
+    margin: 0 auto;
 }
 
-
-/* hover states */
-
-a>.hexagon:hover {
-    background: #f79aac;
+.rhombusone {
+    width: 100px;
+    height: 100px;
+    background-color: #fc808e;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
 }
 
+.rhombusone p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
 
-/* pseudo classes */
+.rhombustwo {
+    width: 100px;
+    height: 100px;
+    background-color: #779ec9;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
+}
 
-.hexagon:before {
-    content: "";
+.rhombustwo p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
+
+.rhombusthree {
+    width: 100px;
+    height: 100px;
+    background-color: #75bab9;
+    -webkit-transform: rotate(45deg);
+    border-radius: 13px;
+    margin: 0 auto;
+}
+
+.rhombusthree p {
+    -webkit-transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+}
+
+.center {
+    /*centering*/
     position: absolute;
-    top: -4px;
     left: 0;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 68px;
+    color: white;
+    font-weight: 300;
 }
 
-.hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+.spacing-top {
+    margin-top: 70px;
 }
 
-
-/* pseudo classes color variations */
-
-.active .hexagon:before {
-    border-bottom: 4px solid #f79aac;
+.rhombus-name {
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 300;
+    color: #9c9c9c;
+    font-size: 23px;
 }
 
-.active .hexagon:after {
-    border-top: 4px solid #f79aac;
+.chart-name {
+    text-align: center;
+    padding: 40px 0px;
+    font-weight: 300;
+    color: #4a4a4a;
 }
 
-a>.hexagon:before {
-    border-bottom: 4px solid black;
+.nav-title {
+    font-weight: 300;
+    color: #585858;
+    font-size: 28px;
 }
 
-a>.hexagon:after {
-    border-top: 4px solid black;
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    font-size:
 }
 
-
-/* pseudo classes hover states */
-
-a>.hexagon:hover:before {
-    border-bottom-color: #f79aac;
+.navbar-toggler-icon {
+    font-size: 32px;
 }
 
-a>.hexagon:hover:after {
-    border-top-color: #f79aac;
-}
 
 ul {
     list-style: none;
@@ -185,92 +215,145 @@ ul {
 
 ul li {
     float: left;
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 
-/* element */
+
+.navbar-light .navbar-toggler-icon
+{
+    background-image: url('menu.png');
+    height: 38px;
+}
+
+
 
 .hexagon {
-    width: 16px;
-    height: 9px;
-    position: relative;
+  position: relative;
+  width: 19px; 
+  height: 10.97px;
+  background-color: #ecede8;
+  margin: 5.48px 0;
+  border-left: solid 2px #f79aac;
+  border-right: solid 2px #f79aac;
 }
 
-a>.hexagon {
-    background: black;
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 13.44px;
+  height: 13.44px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 0.7825px;
 }
-
-.active .hexagon {
-    background: #f79aac;
-}
-
-
-/* hover states */
-
-a>.hexagon:hover {
-    background: #f79aac;
-}
-
-
-/* pseudo classes */
 
 .hexagon:before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+  top: -6.7175px;
+  border-top: solid 2.8284px #f79aac;
+  border-right: solid 2.8284px #f79aac;
 }
 
 .hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+  bottom: -6.7175px;
+  border-bottom: solid 2.8284px #f79aac;
+  border-left: solid 2.8284px #f79aac;
 }
 
-
-/* pseudo classes color variations */
-
-.active .hexagon:before {
-    border-bottom: 4px solid #f79aac;
+.hexagon {
+  position: relative;
+  width: 19px; 
+  height: 10.97px;
+  background-color: #ecede8;
+  margin: 5.48px 0;
+  border-left: solid 2px #f79aac;
+  border-right: solid 2px #f79aac;
 }
 
-.active .hexagon:after {
-    border-top: 4px solid #f79aac;
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 13.44px;
+  height: 13.44px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 0.7825px;
 }
 
-a>.hexagon:before {
-    border-bottom: 4px solid black;
+.hexagon:before {
+  top: -6.7175px;
+  border-top: solid 2.8284px #f79aac;
+  border-right: solid 2.8284px #f79aac;
 }
 
-a>.hexagon:after {
-    border-top: 4px solid black;
+.hexagon:after {
+  bottom: -6.7175px;
+  border-bottom: solid 2.8284px #f79aac;
+  border-left: solid 2.8284px #f79aac;
 }
 
-a>.hexagon:hover:before {
-    border-bottom-color: #f79aac;
+/*hexagon active*/
+
+
+.hexagonactive {
+  position: relative;
+  width: 19px; 
+  height: 10.97px;
+  background-color: #f79aac;
+  margin: 5.48px 0;
+  border-left: solid 2px #f79aac;
+  border-right: solid 2px #f79aac;
 }
 
-a>.hexagon:hover:after {
-    border-top-color: #f79aac;
+.hexagonactive:before,
+.hexagonactive:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 13.44px;
+  height: 13.44px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 0.7825px;
+}
+
+.hexagonactive:before {
+  top: -6.7175px;
+  border-top: solid 2.8284px #f79aac;
+  border-right: solid 2.8284px #f79aac;
+}
+
+.hexagonactive:after {
+  bottom: -6.7175px;
+  border-bottom: solid 2.8284px #f79aac;
+  border-left: solid 2.8284px #f79aac;
 }
 
 hr {
     border: 0;
     border-top: 2px solid #f79aac;
-    left: 16px;
+    left: 17px;
     position: relative;
-    top: -21px;
+    top: -22px;
 }
+
+
+
+.pagination-center {
+    margin: 0 auto;
+    padding: 30px;
+}
+
 
 .pagination-center {
     margin: 0 auto;
